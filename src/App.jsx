@@ -7,9 +7,9 @@ import TestPageV4 from './v4/animations/TestPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Peasy_Website">
       <Routes>
-        <Route path="/" element={<PageV3 />} />
+        <Route path="/" element={<PageV4 />} />
         <Route path="/v2" element={<PageV2 />} />
         <Route path="/v3" element={<PageV3 />} />
         <Route path="/v4" element={<PageV4 />} />
