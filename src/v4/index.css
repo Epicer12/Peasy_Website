@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: crosshair;
+    @apply bg-swiss-white min-h-screen;
+  }
+
+  body {
+    @apply bg-swiss-white text-swiss-black font-sans overflow-x-hidden min-h-screen;
+  }
+
+  ::selection {
+    @apply bg-swiss-cyan text-swiss-black;
+  }
+}
+
+@layer utilities {
+  .text-massive {
+    font-size: clamp(4rem, 15vw, 18rem);
+    line-height: 0.75;
+    letter-spacing: -0.06em;
+    font-weight: 700;
+  }
+
+  .text-sub-massive {
+    font-size: clamp(3rem, 8vw, 8rem);
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+  }
+
+  .text-technical {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -0.02em;
+  }
+
+  /* Custom Grid Utilities for 12-column layout */
+  .swiss-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .bg-swiss-grid-enhanced {
+    background-size: 4rem 4rem;
+    background-image:
+      radial-gradient(circle, #00e5ff 2px, transparent 2.5px),
+      linear-gradient(to right, rgba(0, 229, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 229, 255, 0.2) 1px, transparent 1px);
+  }
+}

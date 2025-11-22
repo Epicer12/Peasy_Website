@@ -44,15 +44,22 @@ export default {
                     black: '#000000',
                     white: '#ffffff',
                     gray: '#cbd5e1',
+                },
+                // V4 Swiss Design
+                swiss: {
+                    white: '#ffffff',
+                    black: '#000000',
+                    cyan: '#00e5ff',
                 }
             },
             fontFamily: {
-                sans: ['"Space Mono"', 'monospace'],
-                serif: ['Playfair Display', 'serif'], // For headers
-                mono: ['Fira Code', 'monospace'],
+                sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+                mono: ['"Space Mono"', 'monospace'],
+                serif: ['Playfair Display', 'serif'],
             },
             backgroundImage: {
                 'grid-pattern': "linear-gradient(to right, #1A1A1A 1px, transparent 1px), linear-gradient(to bottom, #1A1A1A 1px, transparent 1px)",
+                'swiss-grid': 'linear-gradient(to right, #00e5ff 1px, transparent 1px), linear-gradient(to bottom, #00e5ff 1px, transparent 1px)',
             }
         },
     },
